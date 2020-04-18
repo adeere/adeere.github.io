@@ -257,6 +257,18 @@
 	padding-bottom: 30px;
 	height: 100%;
 }
+.method_maps {
+	/* [disabled]max-width: 400px;
+*/
+	/* [disabled]max-height: 200px;
+*/
+	width: 100%;
+	padding-top: 10px;
+	/* [disabled]padding-left: 19px;
+*/
+	padding-bottom: 10px;
+	height: 100%;
+}
 .left_half {
 	background-color: #2B96B2;
 }
