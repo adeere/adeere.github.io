@@ -577,3 +577,23 @@ body {
 .sidenavbar li a:hover {
   color:rgba(40,71,120,1.00);
 }
+
+
+
+.row_card_test {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column_card_test {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column_card_test img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
