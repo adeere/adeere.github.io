@@ -137,6 +137,14 @@
 	font-weight: bold;
 	text-transform: uppercase;
 }
+
+.container .left_article h4 {
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 0%;
+	color: #A1A1A1;
+	font-weight: bold;
+}
 .container .left_article p {
 	padding-left: 5%;
 	padding-right: 5%;
@@ -635,4 +643,28 @@ body {
 	text-align: center;
 	font-size: small;
 	padding-top: 0px;
+}
+/* IMAGES */ 
+
+
+.left_article_image {
+	background-color: #FFFFFF;
+	width: 40%;
+	justify: center;
+	float: left;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: #343434;
+	padding-bottom: 15px;
+}
+
+.left_article_image figcaption {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	display: block;
+	color: #B3B3B3;
+	text-align: center;
+	font-size: small;
+	padding-top: 0px;
+}
+.left_article a {
+	color:#787878;
 }
