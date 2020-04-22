@@ -737,3 +737,42 @@ padding-bottom: 5px;}
 	font-size: small;
 	padding-top: 0px;
 }
+
+.map_to_click {
+	background-color: #FFFFFF;
+	width: 100%;
+	justify: center;
+	float: left;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: #343434;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.map_to_click figcaption {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	display: block;
+	color: #B3B3B3;
+	text-align: center;
+	font-size: small;
+
+}
+
+.map_to_click:hover {
+  background-color: #2E5B71;
+}
+
+.row_map::after {
+ 	content: "";
+  clear: both;
+  display: table;
+}
+
+.column_map {
+ float: left;
+  width: 50%;
+  padding: 5px;
+}
+

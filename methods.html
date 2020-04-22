@@ -20,8 +20,7 @@
 		<li><a href="data.html">DATA</a></li>  
 		<li><a href= "methods.html">METHODS</a></li>
         <li><a href="results.html">RESULTS</a></li>
-        <li><a href="discussion.html">DISCUSSION</a></li>
-        <li><a href="conclusion.html">CONCLUSION</a></li>
+        <li><a href="conclusion.html">DISCUSSION & CONCLUSION</a></li>
         <li><a href="furtherideas.html">FURTHER IDEAS</a></li>
 </ul>
 </div>
@@ -38,7 +37,7 @@
   <section>
     <article class="main_article">
 	<h3>Vulnerability Data</h3>	
-      <p>After downloading dissemination areas for the city of Vancouver, the next thing that I did was download tabular data for population, average age, median income, median monthly cost of rent, number of commuters that usually take transit to work, and the median value of dwellings from the University of Toronto’s Computing in the Humanities and Social Sciences website. Once I had all of the tabular data that I needed, I created spatial joins between the dissemination areas and the tabular data, and exported them into new layers. For the transit riders data, I needed to create a new field for transit density and, using the field calculator, divided the transit riders by the total population. After this, I altered the symbology and had all of my spatial vulnerability data. My original plan was to create a vulnerability index that I could compare against elevation or shoreline and have all of the census variables combined into one. In the end I chose not to do this, as it would require me to make too many assumptions and I do not have the knowledge or expertise to make those decisions. For example, in order to create a vulnerability index, I would need to know if a higher age puts you more at risk than a low income. I am not sure how to answer those many questions that were arising so I decided to look at some of the different factors to vulnerability individually. </p>
+      <p>I started my project by downloading dissemination areas from the UBC Library's resource for the Census of Canada, cropped them to the Greater Vancouver Area, and created a new layer for dissemination areas. I altered the data frame's projection to be NAD 1983 UTM Zone 10. The next thing that I did was download tabular data for population, average age, median income, median monthly cost of rent, number of commuters that usually take transit to work, and the median value of dwellings from the University of Toronto’s Computing in the Humanities and Social Sciences website. Once I had all of the tabular data that I needed, I created spatial joins between the dissemination areas and the tabular data, and exported them into new layers. For the transit riders data, I needed to create a new field for transit density and, using the field calculator, divided the transit riders by the total population. After this, I altered the symbology and had all of my spatial vulnerability data. My original plan was to create a vulnerability index that I could compare against elevation or shoreline and have all of the census variables combined into one. In the end I chose not to do this, as it would require me to make too many assumptions and I do not have the knowledge or expertise to make those decisions. For example, in order to create a vulnerability index, I would need to know if a higher age puts you more at risk than a low income. I am not sure how to answer those many questions that were arising so I decided to look at some of the different factors to vulnerability individually. For my analysis, I focused on median income and median monthly rent. I would have loved to analyze the relationship between elevation and every variable that I mentioned above, but it would have been much too timely. </p>	
     </article>
   </section>
 
@@ -46,7 +45,7 @@
 <section>
    <article class="main_article">
 	<h3>Shoreline</h3>   
-	<p>To show which neighbourhoods and people could be affected by sea level rise, I created a 1 kilometre buffer around the shoreline. This number is rather arbitrary, I wanted to create a map that showed which neighbourhoods are near the ocean and could be at a higher risk of flooding or a change to their life. </p>
+	<p>To show which neighbourhoods and people could be affected by sea level rise, I created a 1 kilometre buffer around the shoreline. This number is rather arbitrary, I wanted to create a map that showed which neighbourhoods are near the ocean and could be at a higher risk of flooding or a change to their life. I do not use the shoreline buffer in my analysis, rather I just have it to illustrate which areas of the city are near the water. </p>
     </article>
 </section>
 <!-- ANALYSIS -->	
@@ -55,9 +54,9 @@
     <article class="main_article">
 	<h3>Analysis</h3>	
 	<h4>Bivariate Choropleth Map</h4>	
-		<p>I created a bivariate choropleth map comparing both median income, and median rental cost with elevation. In order to do this, I joined the different layers together and classified them into four classes each. For the rent and the income, I used natural breaks for the classification. For the elevation, I chose a lower starting point and then used natural breaks. My reasoning for this is that once the elevation reaches a certain threshold, it does not matter much what the value is in regards to sea level rise. I then selected attributes that fit into the different classes (seen in the results section), and chose colours for each of the 16 classes based on the colours that I saw in the Center for Disease Control and Prevention’s publication on bivariate choropleth maps. </p>
+		<p>Bivariate choropleth maps are used to compare two variables that one has a hunch are related. I created a bivariate choropleth map comparing both median income, and median rental cost with elevation. In order to do this, I joined the different layers together and classified them into four classes each. For the rent and the income, I used natural breaks for the classification. For the elevation, I chose a lower starting point and then used natural breaks. My reasoning for this is that once the elevation reaches a certain threshold, it does not matter much what the value is in regards to sea level rise. I then selected attributes that fit into the different classes, and chose colours for each of the 16 classes based on the colours that I saw in the Center for Disease Control and Prevention’s publication on bivariate choropleth maps. </p>
 		<h4> Ordinary Least Squares & Moran's Index</h4>
-		<p> I used ....</p>
+		<p> I performed an ordinary least squares regression on elevation, rent, and income. I followed the steps that we used in the third lab this semester. I chose the elevation as the dependednt variable, and the median income and median monthly rent as the explanatory variables. I also looked at the Moran's index to see if these variables are spatially autocorrelated. </p>
 		<h4> Geographically Weighted Regression</h4>
 		<p> I used...</p>
     </article>
@@ -67,6 +66,7 @@
 <section>
 <article class="main_article">
 	<h3>References</h3>
+	<p>1. </p>
 </article>
 	</section>
  
