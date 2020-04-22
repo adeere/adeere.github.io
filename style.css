@@ -137,6 +137,14 @@
 	font-weight: bold;
 	text-transform: uppercase;
 }
+.container .left_article_main h2 {
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 5%;
+	color: #717070;
+	font-weight: bold;
+	text-transform: uppercase;
+}
 
 .container .left_article h4 {
 	padding-left: 5%;
@@ -667,4 +675,53 @@ body {
 }
 .left_article a {
 	color:#787878;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column_card {
+  float: left;
+  width: 33%;
+  padding: 0 5px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row_card {margin: 0 -5px;
+padding-bottom: 5px;}
+
+/* Clear floats after the columns */
+.row_card:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #F8F8F8;
+	display: table; 
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column_card {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+	  display: table-cell;
+  }
+}
+.column_card figcaption {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	display: block;
+	color: #B3B3B3;
+	text-align: center;
+	font-size: small;
+	padding-top: 0px;
 }
