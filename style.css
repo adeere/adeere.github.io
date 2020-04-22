@@ -106,7 +106,7 @@
 	letter-spacing: 1px;
 	margin-left: auto;
 	text-align: center;
-	width: 16%;
+	width: 14%;
 	transition: all 0.3s linear;
 }
 .secondary_header ul li:hover {
@@ -133,7 +133,7 @@
 	padding-left: 5%;
 	padding-right: 5%;
 	margin-top: 5%;
-	color: #717070;
+	color: #7D7C7C;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -141,7 +141,7 @@
 	padding-left: 5%;
 	padding-right: 5%;
 	margin-top: 5%;
-	color: #717070;
+	color: #525151;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -602,22 +602,29 @@ body {
 	float: left;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	color: #343434;
-	padding-bottom: 15px;
+	padding-bottom: 5px;
 	}
 .main_article p {
 	padding-left: 5%;
 	padding-right: 5%;
 	text-align: justify;
 	line-height: 24px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	color: #8C8C8C;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #B3B3B3;
+}
+.main_article h4 {
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 0%;
+	color: #A1A1A1;
+	font-weight: bold;
 }
 
 .main_article h3 {
 	padding-left: 5%;
 	padding-right: 5%;
-	margin-top: 5%;
+	margin-top: 2%;
 	color: #717070;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -705,7 +712,12 @@ padding-bottom: 5px;}
   padding: 16px;
   text-align: center;
   background-color: #F8F8F8;
-	display: table; 
+  display: table; 
+  transition: background-color .5s;
+}
+
+.card:hover {
+  background-color: #2E5B71;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -714,7 +726,7 @@ padding-bottom: 5px;}
     width: 100%;
     display: block;
     margin-bottom: 20px;
-	  display: table-cell;
+	
   }
 }
 .column_card figcaption {

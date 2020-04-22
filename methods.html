@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Data and Methods</title>
+<title>Background</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,7 +17,8 @@
 <ul>
   <li><a href="index.html">HOME</a></li> 
 	    <li><a href="background.html">BACKGROUND</a></li>
-		<li><a href="methods.html">DATA AND METHODS</a></li>  
+		<li><a href="data.html">DATA</a></li>  
+		<li><a href= "methods.html">METHODS</a></li>
         <li><a href="results.html">RESULTS</a></li>
         <li><a href="discussion.html">DISCUSSION</a></li>
         <li><a href="conclusion.html">CONCLUSION</a></li>
@@ -29,103 +30,44 @@
 <div class="container">
   <header>
     <div class="side_header">
-      <h1 class="title">Data and Methods</h1>
+      <h1 class="title">Methods</h1>
     </div>
   </header>
 	
+<!-- CENSUS DATA -->	
   <section>
-    <h2 class="noDisplay">Introduction</h2>
-    <article class="left_article">
-		<h3>Data</h3>
-		<h4> Social Vulnerability</h4>
-		<p>For this project I used census data to look at different factors. I looked at median monthly rent, the percentage of the population taking transit to work, the population, median income, median cost of dwellings, the number of immigrants, and the average age in dissemination areas. I started my project with census tracts but decided to use dissemination areas as they are smaller and show a more diverse population. As census tracts are bigger, some factors often get averaged out to the median and cannot tell (wow this sounds so bad lol). I was aware of the modifiable areal unit problem during this project, as such, the results that I got could have been completely different if I used a different area. I am going to go through each of the census data statistics that I looked at, and explain how it could be related to low elevations. </p>
-	  </article>
+    <article class="main_article">
+	<h3>Vulnerability Data</h3>	
+      <p>After downloading dissemination areas for the city of Vancouver, the next thing that I did was download tabular data for population, average age, median income, median monthly cost of rent, number of commuters that usually take transit to work, and the median value of dwellings from the University of Toronto’s Computing in the Humanities and Social Sciences website. Once I had all of the tabular data that I needed, I created spatial joins between the dissemination areas and the tabular data, and exported them into new layers. For the transit riders data, I needed to create a new field for transit density and, using the field calculator, divided the transit riders by the total population. After this, I altered the symbology and had all of my spatial vulnerability data. My original plan was to create a vulnerability index that I could compare against elevation or shoreline and have all of the census variables combined into one. In the end I chose not to do this, as it would require me to make too many assumptions and I do not have the knowledge or expertise to make those decisions. For example, in order to create a vulnerability index, I would need to know if a higher age puts you more at risk than a low income. I am not sure how to answer those many questions that were arising so I decided to look at some of the different factors to vulnerability individually. </p>
+    </article>
   </section>
-<!-- RANDOM BREAKING TO KEEP CARDS HAPPY --> 	
+
+<!-- SHORELINE -->	
 <section>
-<article class="left_article_image">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-</article>
+   <article class="main_article">
+	<h3>Shoreline</h3>   
+	<p>To show which neighbourhoods and people could be affected by sea level rise, I created a 1 kilometre buffer around the shoreline. This number is rather arbitrary, I wanted to create a map that showed which neighbourhoods are near the ocean and could be at a higher risk of flooding or a change to their life. </p>
+    </article>
 </section>
-
+<!-- ANALYSIS -->	
+	<section>
+    <h2 class="noDisplay">Introduction</h2>
+    <article class="main_article">
+	<h3>Analysis</h3>	
+	<h4>Bivariate Choropleth Map</h4>	
+		<p>I created a bivariate choropleth map comparing both median income, and median rental cost with elevation. In order to do this, I joined the different layers together and classified them into four classes each. For the rent and the income, I used natural breaks for the classification. For the elevation, I chose a lower starting point and then used natural breaks. My reasoning for this is that once the elevation reaches a certain threshold, it does not matter much what the value is in regards to sea level rise. I then selected attributes that fit into the different classes (seen in the results section), and chose colours for each of the 16 classes based on the colours that I saw in the Center for Disease Control and Prevention’s publication on bivariate choropleth maps. </p>
+		<h4> Ordinary Least Squares & Moran's Index</h4>
+		<p> I used ....</p>
+		<h4> Geographically Weighted Regression</h4>
+		<p> I used...</p>
+    </article>
+  </section>
 	
-<!-- ROW ONE -->
-<div class="row_card">
-	
-<!-- ROW ONE COLUMN 1 -->	
-  <div class="column_card">
-    <div class="card">
-	  <a href="population.pdf"><img src="population_thumbnail.png" alt="Map of Population Density" class="method_maps"/></a>
-		 <figcaption><b>Figure 1:</b> Population in Dissemination Areas in Vancouver</figcaption> 
-	  </div>
-  </div>
-	
-<!-- ROW ONE COLUMN 2 -->	
-  <div class="column_card">
-    <div class="card"><a href="average_age.pdf"><img src="average_age_thumbnail.png" alt="Map of Average Ages" class="method_maps"/></a>
-		<figcaption><b>Figure 2:</b> Average Age in Dissemination Areas in Vancouver</figcaption>
-	  </div>
-  </div>
-<!-- ROW ONE COLUMN 3 -->	
-	  <div class="column_card">
-    <div class="card"><a href="median_income.pdf"><img src="median_income_thumbnail.png" alt="Map of Transit Density" class="method_maps"/></a>
-		<figcaption><b>Figure 3:</b> Median Income in Dissemination Areas in Vancouver</figcaption>
-	  </div>
-  </div>
-	</div>
-	
-<!-- ROW TWO -->		
-<div class="row_card">
-	
-<!-- ROW TWO COLUMN 1 -->		
-  <div class="column_card">
-    <div class="card">
-	  <a href="median_rental_cost.pdf"><img src="median_rental_cost_thumbnail.png" alt="Map of Median Rental Cost" class="method_maps"/></a>
-		 <figcaption><b>Figure 1:</b> Median Monthly Rental Cost in Dissemination Areas in Vancouver </figcaption> 
-	  </div>
-  </div>
-<!-- ROW TWO COLUMN 2 -->		
-<div class="column_card">
-    <div class="card"><a href="transit_density.pdf"><img src="transit_density_thumbnail.png" alt="Map of Transit Density" class="method_maps"/></a>
-		<figcaption><b>Figure 2:</b> Transit Density in Dissemination Areas in Vancouver</figcaption>
-	  </div>
- </div>
-	
-<!-- ROW TWO COLUMN 3 -->	
-  <div class="column_card">
-    <div class="card"><a href="median_dwelling_value.pdf"><img src="median_dwelling_value_thumbnail.png" alt="Map of Transit Density" class="method_maps"/></a>
-		<figcaption><b>Figure 4:</b> Median Dwelling Value in Dissemination Areas in Vancouver</figcaption>
-	  </div>
-  </div>
-	</div>
-
-<!-- References --> 
+<!-- REFERENCES -->
 <section>
-	<article class="left_article">
-	<h3> References:</h3>
-	<p>...
-		</p></article>
+<article class="main_article">
+	<h3>References</h3>
+</article>
 	</section>
  
    <footer class="secondary_header footer">
