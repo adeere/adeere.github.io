@@ -642,6 +642,18 @@ body {
 	padding-left: 0px;
 	height: auto;
 }
+.main_article_image_test {
+	width: 40%;
+	margin-top: 22PX;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-left: 80px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	height: auto;
+}
 .main_article figcaption {
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	display: block;
@@ -749,6 +761,7 @@ padding-bottom: 5px;}
 	padding-top: 15px;
 	padding-right: 15px;
 	padding-left: 15px;
+	transition: background-color .5s;
 }
 
 .map_to_click figcaption {

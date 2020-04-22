@@ -38,16 +38,74 @@
   <section>
     <article class="main_article">
 	<h3>Vulnerability Data</h3>	
-      <p>I started my project by downloading dissemination areas from the UBC Library's resource for the Census of Canada, cropped them to the Greater Vancouver Area, and created a new layer for dissemination areas. I altered the data frame's projection to be NAD 1983 UTM Zone 10. The next thing that I did was download tabular data for population, average age, median income, median monthly cost of rent, number of commuters that usually take transit to work, and the median value of dwellings from the University of Toronto’s Computing in the Humanities and Social Sciences website. Once I had all of the tabular data that I needed, I created spatial joins between the dissemination areas and the tabular data, and exported them into new layers. For the transit riders data, I needed to create a new field for transit density and, using the field calculator, divided the transit riders by the total population. After this, I altered the symbology and had all of my spatial vulnerability data. My original plan was to create a vulnerability index that I could compare against elevation or shoreline and have all of the census variables combined into one. In the end I chose not to do this, as it would require me to make too many assumptions and I do not have the knowledge or expertise to make those decisions. For example, in order to create a vulnerability index, I would need to know if a higher age puts you more at risk than a low income. I am not sure how to answer those many questions that were arising so I decided to look at some of the different factors to vulnerability individually. For my analysis, I focused on median income and median monthly rent. I would have loved to analyze the relationship between elevation and every variable that I mentioned above, but it would have been much too timely. </p>	
+      <p>I started my project by downloading dissemination areas from the UBC Library's resource for the Census of Canada, cropped them to the Greater Vancouver Area, and created a new layer for dissemination areas. I altered the data frame's projection to be NAD 1983 UTM Zone 10. The next thing that I did was download tabular data for population, average age, median income, median monthly cost of rent, number of commuters that usually take transit to work, and the median value of dwellings from the University of Toronto’s Computing in the Humanities and Social Sciences website. Once I had all of the tabular data that I needed, I created spatial joins between the dissemination areas and the tabular data, and exported them into new layers. For the transit riders data, I needed to create a new field for transit density, and, using the field calculator, divided the transit riders by the total population. After this, I altered the symbology for each layer and had all of my spatial vulnerability data complete and ready to be used. I also downloaded skytrain routes and stations as KML files and converted them into shapefiles. They are plotted with the transit density below. My original plan was to create a vulnerability index that I could compare against elevation or shoreline and have all of the census variables combined into one. In the end I chose not to do this, as it would require me to make too many assumptions and I do not have the knowledge or expertise to make those decisions. For example, in order to create a vulnerability index, I would need to know if a higher age puts you more at risk than a low income. I am not sure how to answer those many questions that were arising so I decided to look at some of the different factors to vulnerability individually. For my analysis, I focused on median income and median monthly rent. I would have loved to analyze the relationship between elevation and every variable that I mentioned above, but it would have been much too timely. Below, you can see all of the variables that I have been looking at, joined to dissemination areas. With a click, the pdf of the map will open. </p>	
+		<br>
+		<br>
     </article>
   </section>
-
-<!-- SHORELINE -->	
+	
+<!-- ROW ONE -->
+<div class="row_card">
+	
+<!-- ROW ONE COLUMN 1 -->	
+  <div class="column_card">
+    <div class="card">
+	  <a href="population.pdf"><img src="population_thumbnail.png" alt="Map of Population Density" class="method_maps"/></a>
+		 <figcaption><b>Figure 1:</b> Population in Dissemination Areas in Vancouver</figcaption> 
+	  </div>
+  </div>
+	
+<!-- ROW ONE COLUMN 2 -->	
+  <div class="column_card">
+    <div class="card"><a href="average_age.pdf"><img src="average_age_thumbnail.png" alt="Map of Average Ages" class="method_maps"/></a>
+		<figcaption><b>Figure 2:</b> Average Age in Dissemination Areas in Vancouver</figcaption>
+	  </div>
+  </div>
+<!-- ROW ONE COLUMN 3 -->	
+	  <div class="column_card">
+    <div class="card"><a href="median_income.pdf"><img src="median_income_thumbnail.png" alt="Map of Transit Density" class="method_maps"/></a>
+		<figcaption><b>Figure 3:</b> Median Income in Dissemination Areas in Vancouver</figcaption>
+	  </div>
+  </div>
+	</div>
+	
+<!-- ROW TWO -->		
+<div class="row_card">
+	
+<!-- ROW TWO COLUMN 1 -->		
+  <div class="column_card">
+    <div class="card">
+	  <a href="median_rental_cost.pdf"><img src="median_rental_cost_thumbnail.png" alt="Map of Median Rental Cost" class="method_maps"/></a>
+		 <figcaption><b>Figure 4:</b> Median Monthly Rental Cost in Dissemination Areas in Vancouver </figcaption> 
+	  </div>
+  </div>
+<!-- ROW TWO COLUMN 2 -->		
+<div class="column_card">
+    <div class="card"><a href="transit_density.pdf"><img src="transit_density_thumbnail.png" alt="Map of Transit Density" class="method_maps"/></a>
+		<figcaption><b>Figure 5:</b> Transit Density in Dissemination Areas in Vancouver</figcaption>
+	  </div>
+ </div>
+	
+<!-- ROW TWO COLUMN 3 -->	
+  <div class="column_card">
+    <div class="card"><a href="median_dwelling_value.pdf"><img src="median_dwelling_value_thumbnail.png" alt="Map of Transit Density" class="method_maps"/></a>
+		<figcaption><b>Figure 6:</b> Median Dwelling Value in Dissemination Areas in Vancouver</figcaption>
+	  </div>
+  </div>
+	</div>
+<!-- SEA LEVEL -->	
 <section>
-   <article class="main_article">
-	<h3>Shoreline</h3>   
+   <article class="left_article">
+	<h3>Sea level</h3>   
 	<p>To show which neighbourhoods and people could be affected by sea level rise, I created a 1 kilometre buffer around the shoreline. This number is rather arbitrary, I wanted to create a map that showed which neighbourhoods are near the ocean and could be at a higher risk of flooding or a change to their life. I do not use the shoreline buffer in my analysis, rather I just have it to illustrate which areas of the city are near the water. </p>
     </article>
+		<article class="right_article">
+		<div class="map_to_click">
+	<a href="dem.pdf"><img src="dem.png" alt="" class="map_to_click"></a>
+	<figcaption><b>Figure 7:</b> Digital Elevation Model, Clipped to Vancouver </figcaption>
+	 </div>		
+	
+	</article>
 </section>
 <!-- ANALYSIS -->	
 	<section>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Data and Methods</title>
+<title>Data</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,101 +35,44 @@
   </header>
 	
   <section>
+	 
     <h2 class="noDisplay">Introduction</h2>
-    <article class="left_article">
-		<h3> Social Vulnerability</h3>
-		<p>To look at social vulnerability, I went to Canadian Census data. I decided to use dissemination areas rather than census tracts because they show more variability as they are smaller areas. Of course, there is the potential modifiable areal unit problem, but I will discuss that further in the results section. I chose to look at population, average age, median income, median monthly cost of rent, transit density (number of commuters that usually take transit to work divided by the population), and the median value of dwellings. Below, you can see the maps of these variables after I spatially joined them to dissemination areas.</p>
+    <article class="main_article">
+		<h3> Descriptions</h3> 
+		<h4> Social Vulnerability</h4>
+		<p>To look at social vulnerability, I went to Canadian Census data. I decided to use dissemination areas rather than census tracts because they show more variability as they are smaller areas. Of course, there is the potential modifiable areal unit problem, but I will discuss that further in the results section. I chose to look at population, average age, median income, median monthly cost of rent, transit density (number of commuters that usually take transit to work divided by the population), and the median value of dwellings.</p>
 	  </article>
   </section>
-<!-- RANDOM BREAKING TO KEEP CARDS HAPPY --> 	
+	
 <section>
-<article class="left_article_image">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>	
-<br>
+	<article class="main_article">
+	<h4> Sea Level Rise</h4>
+	<p>In regards to sea level rise, I have been looking at two different features: the shoreline, and a digital elevation model, clipped to Vancouver. My main analysis surrounded the DEM, in my methods section I go into detail on reclassification and conversions that I went through to come up with a layer that could be used in analysis with census data. </p>
 </article>
 </section>
-
-	
-<!-- ROW ONE -->
-<div class="row_card">
-	
-<!-- ROW ONE COLUMN 1 -->	
-  <div class="column_card">
-    <div class="card">
-	  <a href="population.pdf"><img src="population_thumbnail.png" alt="Map of Population Density" class="method_maps"/></a>
-		 <figcaption><b>Figure 1:</b> Population in Dissemination Areas in Vancouver</figcaption> 
-	  </div>
-  </div>
-	
-<!-- ROW ONE COLUMN 2 -->	
-  <div class="column_card">
-    <div class="card"><a href="average_age.pdf"><img src="average_age_thumbnail.png" alt="Map of Average Ages" class="method_maps"/></a>
-		<figcaption><b>Figure 2:</b> Average Age in Dissemination Areas in Vancouver</figcaption>
-	  </div>
-  </div>
-<!-- ROW ONE COLUMN 3 -->	
-	  <div class="column_card">
-    <div class="card"><a href="median_income.pdf"><img src="median_income_thumbnail.png" alt="Map of Transit Density" class="method_maps"/></a>
-		<figcaption><b>Figure 3:</b> Median Income in Dissemination Areas in Vancouver</figcaption>
-	  </div>
-  </div>
-	</div>
-	
-<!-- ROW TWO -->		
-<div class="row_card">
-	
-<!-- ROW TWO COLUMN 1 -->		
-  <div class="column_card">
-    <div class="card">
-	  <a href="median_rental_cost.pdf"><img src="median_rental_cost_thumbnail.png" alt="Map of Median Rental Cost" class="method_maps"/></a>
-		 <figcaption><b>Figure 4:</b> Median Monthly Rental Cost in Dissemination Areas in Vancouver </figcaption> 
-	  </div>
-  </div>
-<!-- ROW TWO COLUMN 2 -->		
-<div class="column_card">
-    <div class="card"><a href="transit_density.pdf"><img src="transit_density_thumbnail.png" alt="Map of Transit Density" class="method_maps"/></a>
-		<figcaption><b>Figure 5:</b> Transit Density in Dissemination Areas in Vancouver</figcaption>
-	  </div>
- </div>
-	
-<!-- ROW TWO COLUMN 3 -->	
-  <div class="column_card">
-    <div class="card"><a href="median_dwelling_value.pdf"><img src="median_dwelling_value_thumbnail.png" alt="Map of Transit Density" class="method_maps"/></a>
-		<figcaption><b>Figure 6:</b> Median Dwelling Value in Dissemination Areas in Vancouver</figcaption>
-	  </div>
-  </div>
-	</div>
-	
-<br>
-	<br>
 	
 <section>
-	<article class="left_article">
-	<h3> Sea Level Rise</h3>
-	<p>In regards to sea level rise, I have been looking at two different features: the shoreline, and a digital elevation model, clipped to Vancouver. </p>
-
-	</article>
-	<article class="right_article">
-	<a href="dem.pdf"><img src="dem.png" alt="" class="placeholder"></a>
-	<figcaption><b>Figure 7:</b> Digital Elevation Model, Clipped to Vancouver </figcaption>	
+	<article class="main_article">
+	<h4>Miscellaneous</h4>
+	<p>I sought out the locations of homeless shelters from Open Data Vancouver and downloaded a KML file from translink of the skytrain station locations and the routes. I wanted to look at the homeless shelters in Vancouver and see where they are located, if they would be vulnerable to a rise in sea level. I wanted to look at the translink skytrain data to see if they too would be vulnerable to a rise in sea level. On the previous page, I compared New York to Vancouver, the data source information is in a table below along with information for a Map of Miami. </p>	
 	
-	</article>
+</article>
+</section>	
+<section>
+<article class="main_article"> 
+<h3>Data Tables </h3>	
+	<img src="vancouver_data_table.png" alt="" class="main_article_image_test">
+	<figcaption class="main_article_image_test"><b>Figure 1:</b> Sources for all of the data in my Vancouver Map and Analysis</figcaption>
 	
-	</section>
+	<img src="ny_table.png" alt="" class="main_article_image_test">
+	<figcaption class="main_article_image_test"><b>Figure 2:</b> Sources for all of the data in my New York Map</figcaption>
+	
+	<img src="miami.png" alt="" class="main_article_image_test">
+	<figcaption class="main_article_image_test"><b>Figure 2:</b> Sources for all of the data in my Miami Map</figcaption>
+	</article>	
+	
+	
+	</section>	
    <footer class="secondary_header footer">
 	  <p class="copyright"> Alison Deere GEOB 370 Final Project</p>
     <div class="copyright">&copy;2019 - <strong>SIMPLE Theme</strong></div>
