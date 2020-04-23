@@ -96,13 +96,20 @@
 <!-- SEA LEVEL -->	
 <section>
    <article class="left_article">
-	<h3>Sea level</h3>   
-	<p>To show which neighbourhoods and people could be affected by sea level rise, I created a 1 kilometre buffer around the shoreline. This number is rather arbitrary, I wanted to create a map that showed which neighbourhoods are near the ocean and could be at a higher risk of flooding or a change to their life. I do not use the shoreline buffer in my analysis, rather I just have it to illustrate which areas of the city are near the water. </p>
+	<h3>Sea level</h3>  
+	<p>Being a city on the ocean, Vancouver must think about its future and the future of the oceans. With climate change comes thermal expansion of water, melting of ice, and with that higher sea levels. While Vancouver is much better off than many cities around the world with regards to sea level rise both in its geography and in its first-world country status, it is important to look at projections and plan ahead.</p>   
+	<p> To show which neighbourhoods and people could be affected by sea level rise, I created a 1 kilometre buffer around the shoreline. This number is rather arbitrary, I wanted to create a map that showed which neighbourhoods are near the ocean and could be at a higher risk of flooding or a change to their life. I do not use the shoreline buffer much in my analysis, rather I just have it to illustrate which areas of the city are near the water.  It is possible to see that all of downtown Vancouver, and most of the lower east side is within 1 km of the shoreline. This is concerning as this is where the majority of the homeless shelters are and where most homeless individuals live. It is also the location of a lot of affordable housing options for low-income people and families. You can see this in figure 7, a click will open the PDF. </p>
+	<p> The bulk of my analysis for sea-level rise was done on the digital elevation model (DEM). Through much trial and error, I was able to convert the DEM to a polygon feature layer. Once this was accomplished, I joined the DEM to a couple of the vulnerability factors and then could perform further analyses. I also reclassified the Digital Elevation model in order to look at Vancouver’s lower elevations, without the entire model. For my reclassifications, I used the same definitions that Emily Nixon defined in her presentation. I used 0.09 m as a best case scenario, 0.88 m as a worst case scenario, and 6 m as a catastrophic scenario. Elsewhere in my analysis I use 5 m as a low elevation value. As the DEM I am using is not extremely specific, I cannot look too much at the best or worst case scenario, and most of my graphs use the low elevation value. </p>   
     </article>
 		<article class="right_article">
-		<div class="map_to_click">
-	<a href="dem.pdf"><img src="dem.png" alt="" class="map_to_click"></a>
-	<figcaption><b>Figure 7:</b> Digital Elevation Model, Clipped to Vancouver </figcaption>
+	<div class="map_to_click">
+	<a href="buffer.pdf"><img src="buffer_thumbnail.png" alt="1 km Shoreline Buffer " class="map_to_click"></a>
+	<figcaption><b>Figure 7:</b> 1 km Shoreline Buffer </figcaption>
+	 </div>	
+			
+	<div class="map_to_click">
+	<a href="dem.pdf"><img src="dem.png" alt="Digital Elevation Model, Clipped to Vancouver " class="map_to_click"></a>
+	<figcaption><b>Figure 8:</b> Digital Elevation Model, Clipped to Vancouver </figcaption>
 	 </div>		
 	
 	</article>
@@ -112,15 +119,17 @@
     <h2 class="noDisplay">Introduction</h2>
     <article class="main_article">
 	<h3>Analysis</h3>	
-	<h4>Bivariate Choropleth Map</h4>	
-		<p>Bivariate choropleth maps are used to compare two variables that one has a hunch are related. I created a bivariate choropleth map comparing both median income, and median rental cost with elevation. In order to do this, I joined the different layers together and classified them into four classes each. For the rent and the income, I used natural breaks for the classification. For the elevation, I chose a lower starting point and then used natural breaks. My reasoning for this is that once the elevation reaches a certain threshold, it does not matter much what the value is in regards to sea level rise. I then selected attributes that fit into the different classes, and chose colours for each of the 16 classes based on the colours that I saw in the Center for Disease Control and Prevention’s publication on bivariate choropleth maps. </p>
+		<p>In order to analyze the potential relationship between elevation and vulnerability, I turned to bivariate choropleth maps and spatial analysis. </p>
+	<h4>Bivariate Choropleth Maps</h4>
+		<p>Bivariate choropleth maps are used to compare two variables or layers that someone thinks might be related. They are created by splitting both variables into a set number of classes, combining those classes and colours that align to those, and putting the result on a map. I created two bivariate choropleth maps comparing both median income, and median rental cost with elevation. In order to do this, I joined the different layers together and classified them into four classes each. For the rent and the income, I used natural breaks for the classification. For the elevation, I manually chose a lower starting point and then used the suggested natural breaks going upwards. My reasoning for this is that once the elevation reaches a certain threshold, it does not matter much what the value is in regards to sea level rise. If a house is located at 150 m above sea level or 300 m above sea level, the risks of sea level rise affecting their property will be similar. I then manually selected attributes that fit into each class, and chose colours for each of the 16 classes based on the colours that I saw in the Center for Disease Control and Prevention’s publication on bivariate choropleth maps. I figure there must be an easier, built-in function for this in ArcGIS but the manual way worked just fine and allowed me to learn more about bivariate choropleth maps. </p>
 		<h4> Ordinary Least Squares & Moran's Index</h4>
-		<p> I performed an ordinary least squares regression on elevation, rent, and income. I followed the steps that we used in the third lab this semester. I chose the elevation as the dependednt variable, and the median income and median monthly rent as the explanatory variables. I also looked at the Moran's index to see if these variables are spatially autocorrelated. </p>
+		<p> While the bivariate choropleth map is probably the best way to compare this data, I also performed a couple of other analyses. The first was a global ordinary least squares linear regression. I followed the steps that we used in the third lab this semester. I chose the elevation as the dependent variable, and the median income and median monthly rent as the explanatory variables. I also looked at Moran's index to see if these variables are spatially autocorrelated. I also calculated the correlation matrix and general statistics for the different variables, which can be seen in the results section following.  </p>
 		<h4> Geographically Weighted Regression</h4>
-		<p> I used...</p>
+		<p> Geographically weighted regression analyses are a local form of linear regression that can be used to model spatial relationships between variables. As a way to address spatial variation within these layers, this regression model calculates new equations for every feature analyzed. In this case I used the elevation as the dependent variable and the median income and median monthly rent as the explanatory variables.  </p>
+	<br>
+		<br>
     </article>
   </section>
- 
    <footer class="secondary_header footer">
 	  <p class="copyright"> Alison Deere GEOB 370 Final Project</p>
     <div class="copyright">&copy;2019 - <strong>SIMPLE Theme</strong></div>
