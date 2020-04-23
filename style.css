@@ -605,7 +605,7 @@ body {
 	padding-bottom: 5px;
 	}
 .main_article p {
-	padding-left: 5%;
+	padding-left: 2.5%;
 	padding-right: 5%;
 	text-align: justify;
 	line-height: 24px;
@@ -614,7 +614,7 @@ body {
 	color: #B3B3B3;
 }
 .main_article h4 {
-	padding-left: 5%;
+	padding-left: 2.4%;
 	padding-right: 5%;
 	margin-top: 0%;
 	color: #A1A1A1;
@@ -622,10 +622,10 @@ body {
 }
 
 .main_article h3 {
-	padding-left: 5%;
+	padding-left: 2.4%;
 	padding-right: 5%;
 	margin-top: 2%;
-	color: #717070;
+	color: #7D7C7C;
 	font-weight: bold;
 	text-transform: uppercase;
 }
