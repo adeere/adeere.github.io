@@ -228,6 +228,16 @@
 	padding-bottom: 0px;
 	padding-left: 0px; }
 
+.right_article_main figcaption {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	display: block;
+	color: #B3B3B3;
+	text-align: center;
+	font-size: small;
+	padding-bottom: 20px;
+	
+}
+
 .right_article ul li {
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";;
 	list-style: none;
