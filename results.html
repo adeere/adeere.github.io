@@ -83,7 +83,7 @@
 <section>	
 <article class= "main_article">
 	<h3>Geographically Weighted Regression </h3>
-	<p> Below is my map for my geographically weighted regression and the outputs that were given when I performed this analysis. The residuals squares value is 9832527.34 which is quite massive. The smaller this value, the closer this model fits the observed data that I have inp </p>
+	<p> Below is my map for my geographically weighted regression and the outputs that were given when I performed this analysis. I will go over a few of the important values. The residuals squares value is 9832527.34 which is quite large. The smaller this value, the closer this model fits the observed data that I have inputted.  Sigma, in this case is equal to 56.74. Smaller values of sigma are sought after in geographically weighted regression analyses. On the map, it appears as if these variables are related, the residuals close to the mean are clustered and it appears there is a pattern. I believe the result of this analysis is similar to the result of the ordinary least squares approach. These variables are likely to be related spatially, but without further analyses with the key variables that are likely missing, it is impossible to say for sure.</p>
 	</article>
 
 <div class="row_map"> 
@@ -108,6 +108,7 @@
 <section>
 <article class= "main_article">
 	<h3>Correlation </h3>
+	<p>Correlation coefficients range from -1 to +1. A value of -1 means that two variables are perfectly negatively correlated (as one goes up, the other goes down), and a value of +1 means that two values are perfectly positively correlated (they go up together). The two tables I have provided below are the correlation matrices for income and elevation, and for monthly rent and elevation. These were calculated in ArcGIS with the Band Collection Statistics tool. The correlation coefficients for income and monthly rent are -0.583 and -0.332, respectively. The negative number means that these values are negatively correlated. This surprises me, as I have been trying to prove that lower income, lower monthly rent (or other forms of vulnerability) should correlate to a low elevation. I think the result of this tells me that I need to use more variables and factors to carry out an accurate analysis.</p>
 	</article>	
 	<div class="row_map"> 
 	<div class="column_map">
@@ -147,7 +148,7 @@
     <h2 class="noDisplay">Introduction</h2>
     <article class="main_article">
 	<h3>Conclusion </h3>	
-		<p>Taken together, the results I came to lead to the conclusion that there may be a relationship between elevation and vulnerability. I did not analyze enough variables to be certain of that relationship, and did not create a vulnerability index to include all of the factors. Given the background research that is included here, I would say it is extremely likely that there is a relationship between elevation and vulnerability, specifically that there is a higher chance that individuals with a higher social vulnerability index live at a lower elevation, and are thus at a higher risk of being hurt by sea level rise. During any disaster, it is extremely likely that the upper class will end up on top. These issues are magnified today, in a pandemic. Individuals with higher vulnerability are put at the highest risk. Homeless individuals have a much tougher time self-isolating during COVID-19 than individuals who can afford shelter. </p>
+		<p>Taken together, the results lead to the conclusion that there may be a relationship between elevation and vulnerability. It is likey that these factors are related. Looking at the median income and the median monthly rent along with the elevation, it looks like there definitely could be a spatial relationship there. I did not analyze enough variables to be certain of that relationship, and did not create a vulnerability index to include all of the factors. Given the background research that is included here, I would say it is extremely likely that there is a relationship between elevation and vulnerability, specifically that there is a higher chance that individuals with a higher social vulnerability index live at a lower elevation, and are thus at a higher risk of being hurt by sea level rise. During any disaster, it is extremely likely that the upper class will end up on top. These issues are magnified today, in a pandemic. Individuals with higher vulnerability are put at the highest risk. Homeless individuals have a much tougher time self-isolating during COVID-19 than individuals who can afford shelter. </p>
     </article>
   </section>
 	
