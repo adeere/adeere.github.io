@@ -789,3 +789,38 @@ padding-bottom: 5px;}
   padding: 5px;
 }
 
+
+
+.container .main_article h3 {
+	padding-left: 3%;
+	padding-right: 5%;
+	margin-top: 5%;
+	color: #7D7C7C;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.container .main_article_main h2 {
+	padding-left: 3%;
+	padding-right: 5%;
+	margin-top: 5%;
+	color: #525151;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.container .main_article h4 {
+	padding-left: 3%;
+	padding-right: 5%;
+	margin-top: 0%;
+	color: #A1A1A1;
+	font-weight: bold;
+}
+.container .main_article p {
+	padding-left: 3%;
+	padding-right: 5%;
+	text-align: justify;
+	line-height: 24px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #B3B3B3;
+}
